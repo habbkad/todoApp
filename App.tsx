@@ -3,10 +3,14 @@ import Router from './src/router/router';
 import React from 'react';
 import 'react-native-gesture-handler';
 import {NativeBaseProvider} from 'native-base';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+
 const App = () => {
   return (
     <NativeBaseProvider>
-      <Router />
+      <SafeAreaProvider>
+        <Router />
+      </SafeAreaProvider>
     </NativeBaseProvider>
   );
 };

@@ -35,7 +35,7 @@ const Welcome_component = () => {
         </TouchableOpacity>
         <TouchableOpacity style={[styles.btn]}>
           <Text fontSize={'xl'} style={styles.titleText}>
-            SignUp
+            Register Now
           </Text>
         </TouchableOpacity>
       </View>
@@ -77,5 +77,8 @@ const styles = StyleSheet.create({
   },
   login: {
     marginBottom: '8%',
+  },
+  signin: {
+    color: ' rgba(30, 48, 183, 1)',
   },
 });

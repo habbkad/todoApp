@@ -4,12 +4,14 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import Home from '../pages/Home/home';
 import Welcome from '../pages/WelcomeScreen/Welcome';
+import Login from '../pages/Login/Login';
+import Sign_up from '../pages/SignUp/Sign_up';
 const Stack = createNativeStackNavigator();
 const router = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Welcome} />
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );
