@@ -26,8 +26,9 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 60,
     backgroundColor: ' rgba(46, 52, 112, 1)',
-    width: '90%',
+    width: '100%',
     borderRadius: 20,
+    marginBottom: 10,
   },
   taskCon: {
     flexDirection: 'row',

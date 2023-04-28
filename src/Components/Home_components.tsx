@@ -44,5 +44,5 @@ const styles = StyleSheet.create({
   menuCon: {flex: 1},
   title_con: {flex: 1},
   category: {flex: 2, width: '100%'},
-  tasks: {flex: 6},
+  tasks: {flex: 4},
 });
