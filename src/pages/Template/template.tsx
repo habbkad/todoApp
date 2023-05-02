@@ -1,6 +1,6 @@
 import {StyleSheet, View, SafeAreaView} from 'react-native';
 import React from 'react';
-import Template_con from '../../Components/Template_con';
+import Template_con from '../../Components/NewTask_con';
 
 type Props = {};
 

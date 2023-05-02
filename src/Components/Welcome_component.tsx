@@ -1,8 +1,14 @@
 import {SafeAreaView, StyleSheet, TouchableOpacity, View} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Center, Image, Text} from 'native-base';
-
+import {useNavigation} from '@react-navigation/native';
 const Welcome_component = () => {
+  const navigation = useNavigation();
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('Home');
+    }, 1000);
+  });
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.logo_container}>
