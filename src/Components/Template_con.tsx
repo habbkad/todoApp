@@ -1,10 +1,18 @@
 import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
 import {TouchableOpacity} from 'react-native';
+import {useDispatch, useSelector} from 'react-redux';
+import {selectTask, addTask} from '../redux/tasksSlice';
 
 type Props = {};
 
 const Template_con = (props: Props) => {
+  const dispatch = useDispatch();
+  dispatch(addTask({task: 'jkgjgj'}));
+  const counterValue = useSelector(selectTask);
+
+  console.log('**********Z****' + counterValue[1].task);
+
   return (
     <View style={styles.container}>
       <View style={styles.closeBtnCon}>
